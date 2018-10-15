@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>provisioningProfiles</key>
+	<dict>
+		<key>cn.daokang.cliams.guoxh.b.su</key>
+		<string>7d810f5e-6bf7-47ce-abdf-7f9c7a3f66e9</string>
+	</dict>
+	<key>method</key>
+	<string>enterprise</string>
+</dict>
+</plist>
