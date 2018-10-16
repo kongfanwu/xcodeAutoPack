@@ -18,10 +18,10 @@ def uploadFile(productVersion=1.0, fileName=None, file=None):
     :param file: dSYM 文件路径 /Users/kongfanwu/Desktop/build_SIT/2018_06_28_20_58_16/dsym.app.dSYM.zip
     :return: None
     '''
-    params = {'app_key': 'b92742df-9d63-42f6-8bfe-e9f2bddb6452',
+    params = {'app_key': 'b92742df-9',
               'app_id': '320f77cc4c',
               'bugly_url': 'https://api.bugly.qq.com/openapi/file/upload/symbol',
-              'bundleId': 'cn.daokang.cliams.guoxh.b',
+              'bundleId': '',
               'api_version': '1',
               'symbolType': '2',
               'channel': 'DDSC'
