@@ -104,12 +104,6 @@ getFileName(){
 # 调用方法。获取scheme名称
 getFileName 
 
-#更新timeout
-export FASTLANE_XCODEBUILD_SETTINGS_TIMEOUT=120
-
-#计时
-SECONDS=0
-
 #假设脚本放置在与项目相同的路径下
 project_path="$(pwd)"
 
@@ -185,5 +179,9 @@ open ${output_path}
 appInfoPath="$(pwd)/${Project_Name}/Info.plist"
 bundleShortVersionString=$(/usr/libexec/PlistBuddy -c "Print CFBundleShortVersionString" ${appInfoPath})
 echo "bundleShortVersionString=${bundleShortVersionString}"
+
+# 压缩符号表 q:不显示log r:文件夹内部文件也压缩 m:压缩完，删除原文件
+zip -q -r -m $archivePath.zip $archivePath
+
 # 上传符号表
-#./upload.py ${bundleShortVersionString} ${archive_name} ${archivePath}
+./upload.py ${bundleShortVersionString} ${archive_name} ${archivePath}.zip
